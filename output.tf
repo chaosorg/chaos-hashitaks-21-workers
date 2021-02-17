@@ -1,3 +1,3 @@
 output "master_ip_address" {
-  value = aws_instance.master_cluster.public_ip
+  value = aws_instance.worker_cluster1.public_ip
 }

@@ -11,7 +11,3 @@ data "aws_subnet" "subnet_az2" {
   vpc_id            = data.aws_vpc.vpc_account.id
   availability_zone = "us-west-2b"
 }
-
-data "aws_iam_role" "ec2_role" {
-  name = "role_ec2"
-}
