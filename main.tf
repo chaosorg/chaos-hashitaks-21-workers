@@ -24,7 +24,7 @@ resource "aws_security_group" "security_group" {
 }
 
 
-resource "aws_instance" "worker_cluster1" {
+resource "aws_instance" "worker_node1" {
   ami                         = "ami-0e999cbd62129e3b1"
   instance_type               = "t2.micro"
   subnet_id                   = data.aws_subnet.subnet_az2.id
